@@ -1,20 +1,67 @@
 .header{
     background-color: #31304D;
     width: 100%;
-    height: 20vh;
+    min-height: 20vh;
     display: flex;
     align-items:center;
     justify-content: center;
-    
+
     .form{
-        min-width: 30%;
+        min-width: 40%;
         background-color: #161A30;
-        padding: 0.5rem;
+        padding: 1rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
         border-radius: 1rem;
+        @media(max-width: 530px) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+        }
+        
+        .customFile{
+            border: 1px solid #F0ECE5;
+            border-radius: 3rem;
+            padding: 5px;
+            font-size: 1.2rem;
+            margin: 1rem;
+            color: #F0ECE5;
+            &::-webkit-file-upload-button{
+                background-color: #F0ECE5;
+                color: #161A30;
+                padding: 8px 16px;
+                border: none;
+                border-radius: 3rem;
+                cursor: pointer;
+            }
+            @media(max-width: 426px) {
+                margin: 1rem 0;
+                max-width: 100%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+        }
+        }
+        .submitBtn {
+            border: none;
+            font-size: 1.2rem;
+            border-radius: 3rem;
+            padding: 0.5rem 1rem;
+            background-color: #F0ECE5;
+            color: #161A30;
+            cursor: pointer;
 
+            &:hover{
+                color: #31304D;
+                background-color: #B6BBC4;
+            }
+        }
         
     }
 }
