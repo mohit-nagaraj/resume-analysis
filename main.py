@@ -59,12 +59,11 @@ def pdf(path):
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/upload',methods=['POST'])# https://988d-14-99-167-142.ngrok-free.app
+@app.route('/upload',methods=['POST'])
 def upload():
     file = request.files['file']
     file.save(f'resumes/{file.filename}')
     filename = file.filename
-    # open(r"jj.pdf",'wb').write(file)
     print(filename)
     j = pdf(str(filename))
     j = model(j)
