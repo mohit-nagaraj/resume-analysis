@@ -16,10 +16,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="form">
-        <div class="custom-file-input">
-          <input type="file" id="fileInput" name="fileInput" class="hidden" />
-        </div>
-        <button type="submit">submit</button>
+        <input type="file" />       <button type="submit">submit</button>
       </div>
     </div>
   );

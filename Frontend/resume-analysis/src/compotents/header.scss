@@ -5,61 +5,21 @@
     display: flex;
     align-items:center;
     justify-content: center;
+    
     .form{
-        padding: 1rem;
         min-width: 30%;
-        margin-bottom: 20px;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
         background-color: #161A30;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         border-radius: 1rem;
-        flex-wrap: wrap;
-        .custom-file-input {
-            position: relative;
-            display: inline-block;
-          }
-          
-          .hidden {
-            display: none;
-          }
-          
-          .custom-file-input label {
-            background-color: #B6BBC4;
-            color: #31304D;
-            display: inline-block;
-            padding: 8px 12px;
-            cursor: pointer;
-            border: 1px solid black;
-            border-radius: 4px;
-            transition: all 0.2s ease-in-out 0s;
-            &:hover{
+
+        input{
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
             background-color: #F0ECE5;
-            color: #31304D;
-            border: 1px solid #31304D;
-            }
-          }
-          
-          .custom-file-input input[type="file"] {
-            position: absolute;
-            top: 0;
-            left: 0;
-            opacity: 0;
-            cursor: pointer;
-          }
-          button{
-            padding: 11px 12px;
-            cursor: pointer;
-            border: 1px solid black;
-            border-radius: 4px;
-            background-color: #B6BBC4;
-            color: #31304D;
-            transition: all 0.2s ease-in-out 0s;
-            &:hover{
-              background-color: #F0ECE5;
-              color: #31304D;
-              border: 1px solid #31304D;
-            }
-          }
+            color:#161A30;
+        }
     }
 }
