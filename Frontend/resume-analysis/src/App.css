@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding:0px 20px ;
+  align-items: center;
+  background-color: #31304D;
+  color: #F0ECE5;
+  font-family: 'Poppins', sans-serif;
+}

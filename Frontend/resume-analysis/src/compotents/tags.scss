@@ -1,3 +1,85 @@
 .tags{
+    min-height: 70vh;
+    background-color: #d9d9d9;
+    padding: 20px 10px 40px 10px;
+    .wrapper{
+        margin: auto;
+        max-width: 1260px;
+        .courses{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-top: 20px;
+            .course{
+                &:hover{
+                    scale: 1.05;
+                }
+                transition: all 0.2s ease-in-out 0s;
+                scale:1;
+                background-color: #fff;
+                padding: 10px;
+                border-radius: 10px;
+                width: 310px;
+                text-align: left;
+                margin: auto;
+                margin-top: 10px;   
+                img{
+                    width: 300px;
+                    height: 150px;
+                    object-fit: cover;
+                    object-position: center;
+                    border-radius: 10px;
+                    margin-left: 5px;
+                }
+                .name{
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: #000;
+                    margin: 5px 0px 15px 0px;
+                }
+                .description{
+                    font-size: 1rem;
+                    font-weight: 400;
+                    color: #353535;
+                    margin-bottom: 10px;
+                }
+                .rating{
+                    display: flex;
+                    align-items: center;
+                    svg{
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+        .filter{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .tag{
+                font-size: 1.1rem;
+                padding: 0.5rem 1rem;
+                border:2px solid #31304D;
+                color: #31304D;
+                border-radius: 1rem;
+                transition: all 0.2s ease-in-out 0s;
+                
+                &:hover{
+                    background-color: #31304D;
+                    color: #F0ECE5;
+                }
+            }
+        }
+    }   
+}
+
+a{
+    text-decoration: none;
     
 }
