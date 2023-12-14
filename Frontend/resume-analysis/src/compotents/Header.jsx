@@ -24,11 +24,10 @@ const Header = ({ setTags }) => {
   return (
     <div className="header">
       <div className="form">
-        <input type="file" id="file-input" />
-        <label for="file-input">Choose a file</label>
-        <div id="file-name"></div>
 
-        <button type="submit" onClick={uploadFile}>submit</button>
+        <input type="file" className="customFile"/>
+
+        <button type="submit" onClick={uploadFile} className="submitBtn">submit</button>
       </div>
     </div>
   );
