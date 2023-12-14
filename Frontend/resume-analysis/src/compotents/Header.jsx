@@ -29,6 +29,9 @@ const Header = ({ setTags }) => {
 
         <button type="submit" onClick={uploadFile} className="submitBtn">submit</button>
       </div>
+        <div className="per">
+        <input type="checkbox" id="toggle" defaultChecked/> Store my resume
+        </div>
     </div>
   );
 };
