@@ -7,7 +7,7 @@ const Tags = ({ filters }) => {
     //fetch request to get courses
     console.log(item.target.innerHTML);
     let name=item.target.innerHTML.replace(' ','%20');
-    fetch(`http://988d-14-99-167-142.ngrok-free.app/info?tag=${name}`, {
+    fetch(`https://018c-103-5-132-23.ngrok-free.app/info?tag=${name}`, {
       method: "GET",
     }).then(response => response.text())
     .then(data=>{

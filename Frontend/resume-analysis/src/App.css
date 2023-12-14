@@ -45,4 +45,9 @@ nav{
   background-color: #31304D;
   color: #F0ECE5;
   font-family: 'Poppins', sans-serif;
+  a{
+    color: #F0ECE5;
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
