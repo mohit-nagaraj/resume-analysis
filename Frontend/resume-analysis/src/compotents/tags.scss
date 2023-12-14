@@ -20,6 +20,7 @@
             justify-content: space-evenly;
             margin-top: 20px;
             .course{
+                min-height: 320px;
                 &:hover{
                     scale: 1.05;
                 }
@@ -89,4 +90,10 @@
 a{
     text-decoration: none;
     
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

@@ -1,22 +1,32 @@
-import React from "react";
+import React,{useState} from "react";
 import "./header.scss";
-const Header = () => {
-  const uploadFile = ({ setTags }) => {
+
+const Header = ({ setTags }) => {
+  const uploadFile = () => {
+    console.log('try');
     const fileInput = document.querySelector('input[type="file"]');
     const formData = new FormData();
     formData.append("file", fileInput.files[0]);
-    fetch("http://localhost:5000/upload", {
+    console.log('try2');
+    fetch("https://988d-14-99-167-142.ngrok-free.app/upload", {
       method: "POST",
       body: formData,
-    }).then((response) => {
-      console.log(response);
-      setTags(response);
+    }).then(response => response.text())
+    .then(data => {
+      let res=JSON.parse(data);
+      console.log(res.labels);
+      setTags(res.labels);
     });
+    alert("File uploaded");
   };
   return (
     <div className="header">
       <div className="form">
-        <input type="file" />       <button type="submit">submit</button>
+        <input type="file" id="file-input" />
+        <label for="file-input">Choose a file</label>
+        <div id="file-name"></div>
+
+        <button type="submit" onClick={uploadFile}>submit</button>
       </div>
     </div>
   );
