@@ -28,7 +28,7 @@ def coursera(tag_c):
 
 def model(text):
     API_URL = "https://api-inference.huggingface.co/models/facebook/bart-large-mnli"
-    headers = {"Authorization": "Bearer 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"}
+    headers = {"Authorization": f"Bearer {open('api.txt').read()}"}
 
     def query(payload):
         response = requests.post(API_URL, headers=headers, json=payload)
